@@ -1,0 +1,35 @@
+.expenseContainer{
+  display: flex;
+  flex-direction: row;
+  background-color:rgb(111, 63, 111);
+  width: 50%;
+  height: 500px;
+  margin: 100px auto;
+  color: aliceblue;
+  padding:3rem;
+  border-radius: 10px;
+  justify-content: space-between;
+  
+}
+.dateCard{
+  width: 8.5rem;
+  height: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.details{
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  width:64%;
+  height: 2rem;
+  justify-content: space-between;
+  margin-top: -14px;
+}
+.details p{
+  background-color: rgb(178, 137, 217);
+  height: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
+}
