@@ -12,6 +12,6 @@ export default function Expense({title,amount,date}) {
           <p>${amount}</p>
         </div>
       </div>
-    
+
   );
 }
