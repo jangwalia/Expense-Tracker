@@ -1,5 +1,5 @@
 
-import ExpenseItem from "./Components/ExpenseItem";
+import ExpenseItem from './Components/Expenses/ExpenseItem'
 import Card from "./Components/shared/Card";
 function App() {
   const expense = [
