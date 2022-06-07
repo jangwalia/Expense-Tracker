@@ -1,6 +1,8 @@
 
 import ExpenseItem from './Components/Expenses/ExpenseItem'
 import Card from "./Components/shared/Card";
+import Newexpense from './Components/NewExpense/Newexpense';
+import './App.css'
 function App() {
   const expense = [
     { id: 1, title: "car tire", amount: 400, date: new Date(2022, 2, 15) },
@@ -9,9 +11,13 @@ function App() {
     { id: 2, title: "karate", amount: 200, date: new Date(2022, 2, 28) },
   ];
   return (
+    <>
+    <Newexpense/>
     <Card className="expenseContainer">
       <ExpenseItem expense = {expense}/>
     </Card>
+    </>
+    
   );
 }
 
