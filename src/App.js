@@ -1,4 +1,3 @@
-
 import ExpenseItem from './Components/Expenses/ExpenseItem'
 import Card from "./Components/shared/Card";
 import Newexpense from './Components/NewExpense/Newexpense';
@@ -10,14 +9,16 @@ function App() {
     { id: 2, title: "computer", amount: 800, date: new Date(2022, 2, 24) },
     { id: 2, title: "karate", amount: 200, date: new Date(2022, 2, 28) },
   ];
+  
   const handleCreateExpense = (expenses)=>{
     console.log(expenses)
   }
+ 
   return (
     <>
     <Newexpense onCreatExpense = {handleCreateExpense}/>
     <Card className="expenseContainer">
-      <ExpenseItem expense = {expense}/>
+     <ExpenseItem expense = {expense}/>
     </Card>
     </>
     
