@@ -1,1 +1,1 @@
-## Expense Tracker
+## Expense Tracker- Single page React app to track your expenses
