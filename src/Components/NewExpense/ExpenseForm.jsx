@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import './ExpenseForm.css'
-export default function ExpenseForm() {
+export default function ExpenseForm({onExpenseData}) {
   const [title,setTitle] = useState('');
   const [amount,setAmount] = useState('');
   const [date,setDate] = useState('');
@@ -24,7 +24,7 @@ export default function ExpenseForm() {
       amount,
       date
     }
-    console.log(newExpense);
+    onExpenseData(newExpense);
     setTitle('');
     setAmount('');
     setDate('');

@@ -10,9 +10,12 @@ function App() {
     { id: 2, title: "computer", amount: 800, date: new Date(2022, 2, 24) },
     { id: 2, title: "karate", amount: 200, date: new Date(2022, 2, 28) },
   ];
+  const handleCreateExpense = (expenses)=>{
+    console.log(expenses)
+  }
   return (
     <>
-    <Newexpense/>
+    <Newexpense onCreatExpense = {handleCreateExpense}/>
     <Card className="expenseContainer">
       <ExpenseItem expense = {expense}/>
     </Card>
