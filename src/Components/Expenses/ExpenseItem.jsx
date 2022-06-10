@@ -7,10 +7,13 @@ export default function ExpenseItem({expenses}) {
   const handleFilter = (year) =>{
     setFilteredYear(year)
   }
+  const newFilteredYear = expenses.filter(expense => {
+    return expense.date.getFullYear().toString() === filteredYear;
+  })
   return (
     <div>
       <FilterExpense selected={filteredYear}  onFilterChange = {handleFilter}/>
-      {expenses.map(item=>
+      {newFilteredYear.map(item=>
         <Expense
         key = {item.id}
         id= {item.id}
