@@ -22,7 +22,7 @@ export default function ExpenseForm({onExpenseData}) {
     const newExpense = {
       title,
       amount,
-      date
+      date : new Date(date)
     }
     onExpenseData(newExpense);
     setTitle('');
