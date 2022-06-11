@@ -40,4 +40,17 @@
     border-radius: 10px;
     background-color: rgb(178, 137, 217);
     font-size: 17px;
+    margin-right: 1rem;
+}
+
+.hideForm{
+    position: relative;
+    right: -33%;
+    width: 11rem;
+    height: 5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 12%;
+    background-color:rgba(71, 31, 69, 0.6) ;
+    color:#fff;
 }

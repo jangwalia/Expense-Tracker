@@ -4,6 +4,15 @@ export default function ExpenseForm({onExpenseData}) {
   const [title,setTitle] = useState('');
   const [amount,setAmount] = useState('');
   const [date,setDate] = useState('');
+  const [showForm,setShowForm] = useState(false);
+
+const onShowForm = () =>{
+  setShowForm(true)
+}
+
+const onHideForm = () =>{
+  setShowForm(false)
+}
 
   const handleTitleChange = (e) =>{
     setTitle(e.target.value);
@@ -29,6 +38,12 @@ export default function ExpenseForm({onExpenseData}) {
     setAmount('');
     setDate('');
   }
+
+  if(!showForm) {
+    return <div className=' formContainer '>
+      <button className='hideForm' onClick={onShowForm}>Add Expense</button>
+    </div>
+  }
   return (
     <div className='formContainer'>
       <form onSubmit = {handleSubmitForm}>
@@ -46,6 +61,7 @@ export default function ExpenseForm({onExpenseData}) {
         </div>
         <div className="submitForm">
           <button type = 'submit'>Add Expense</button>
+          <button onClick = {onHideForm}>Cancel</button>
         </div>
       </form>
     </div>
