@@ -5,10 +5,10 @@ import Newexpense from './Components/NewExpense/Newexpense';
 import './App.css'
 
 const dummy_data = [
-  { id: 1, title: "car tire", amount: 400, date: new Date(2022, 2, 15) },
-  { id: 2, title: "ymca", amount: 180, date: new Date(2022, 2, 20) },
-  { id: 3, title: "computer", amount: 800, date: new Date(2022, 2, 24) },
-  { id: 4, title: "karate", amount: 200, date: new Date(2022, 2, 28) }
+  { id: 0, title: "car tire", amount: 400, date: new Date(2019, 2, 15) },
+  { id: 1, title: "ymca", amount: 180, date: new Date(2020, 3, 20) },
+  { id: 2, title: "computer", amount: 800, date: new Date(2021, 5, 24) },
+  { id: 3, title: "karate", amount: 200, date: new Date(2022, 10, 28) }
 ];
 function App() {
  

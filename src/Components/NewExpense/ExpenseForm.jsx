@@ -30,7 +30,7 @@ const onHideForm = () =>{
     e.preventDefault()
     const newExpense = {
       title,
-      amount,
+      amount : +amount,
       date : new Date(date)
     }
     onExpenseData(newExpense);
