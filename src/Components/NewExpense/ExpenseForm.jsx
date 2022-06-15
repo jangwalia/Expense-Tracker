@@ -3,7 +3,7 @@ import './ExpenseForm.css'
 export default function ExpenseForm({onExpenseData}) {
   const [title,setTitle] = useState('');
   const [amount,setAmount] = useState('');
-  const [date,setDate] = useState('');
+  const [entereddate,setEnteredDate] = useState('');
   const [showForm,setShowForm] = useState(false);
 
 const onShowForm = () =>{
@@ -23,7 +23,7 @@ const onHideForm = () =>{
   }
 
   const handleDateChange = (e) =>{
-    setDate(e.target.value);
+    setEnteredDate(e.target.value);
   }
 
   const handleSubmitForm = (e) =>{
@@ -31,12 +31,12 @@ const onHideForm = () =>{
     const newExpense = {
       title,
       amount : +amount,
-      date : new Date(date)
+      date : new Date(entereddate)
     }
     onExpenseData(newExpense);
     setTitle('');
     setAmount('');
-    setDate('');
+    setEnteredDate('');
   }
 
   if(!showForm) {
@@ -57,7 +57,7 @@ const onHideForm = () =>{
         </div>
         <div className="dateForm">
           <label>Date</label>
-          <input type="date" value={date} min='2022-01-01' max='2022-12-31' onChange={handleDateChange}/>
+          <input type="date" value={entereddate} min='2022-01-01' max='2022-12-31' onChange={handleDateChange}/>
         </div>
         <div className="submitForm">
           <button type = 'submit'>Add Expense</button>

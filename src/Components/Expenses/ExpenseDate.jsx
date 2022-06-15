@@ -2,7 +2,8 @@ import React from 'react'
 import Card from '../shared/Card';
 import './ExpenseDate.css'
 export default function ExpenseDate({date}) {
-  const month = date.toLocaleString('en-US',{month : 'long'});
+  const options = { month: 'long'};
+  const month = Intl.DateTimeFormat('en-US', options).format(date);
   const day = date.toLocaleString('en-US',{day : '2-digit'});
   const year = date.getFullYear();
   return (

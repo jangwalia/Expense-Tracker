@@ -4,7 +4,7 @@ import ExpenseList from './ExpenseList';
 import FilterExpense from './FilterExpense'
 import ExpensesChart from './ExpensesChart';
 export default function ExpenseItem({expenses}) {
-  const [filteredYear,setFilteredYear] = useState('2019');
+  const [filteredYear,setFilteredYear] = useState('2022');
   const handleFilter = (year) =>{
     setFilteredYear(year)
   }
